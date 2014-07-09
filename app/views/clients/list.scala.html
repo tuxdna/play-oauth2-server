@@ -1,0 +1,40 @@
+@(clients: List[oauth2.Client], user: models.oauth2.User)
+
+@main("List of Clients", user) { 
+
+<div class="container">
+
+<div class="row well">
+<h2>List of Clients</h2>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+	<th>ID</th>
+	<th>SECRET</th>
+	<th>Description</th>
+	<th>Redirect URI</th>
+	<th>Scope</th>
+	<th colspan="2">Action</th>
+</tr>
+</thead>
+<tbody>
+@for(client <- clients) {
+<tr>
+	<td>@client.id</td>
+	<td>@client.secret</td>
+	<td style="max-width:350px">@client.description</td>
+	<td>@client.redirectUri</td>
+	<td>@client.scope</td>
+	<td><a href="@routes.Clients.edit(client.id)">Edit</a></td>
+	<td><a href="@routes.Clients.delete(client.id)">Delete</a></td>
+</tr>
+}
+</tbody>
+</table>
+<p class="text-right"><a href="@routes.Clients.create" class="btn btn-primary">Add a new App / Client</a></p>
+</div>
+</div>
+
+
+}
+

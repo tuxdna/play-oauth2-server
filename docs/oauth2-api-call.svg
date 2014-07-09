@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="46cm" height="50cm" viewBox="61 -31 914 988" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="63" y="-29.25" width="911" height="985"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="63" y="-29.25" width="911" height="985"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="518.5" y="467.15">
+      <tspan x="518.5" y="467.15"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="200.298" y="132.5" width="198" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="200.298" y="132.5" width="198" height="38"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="299.298" y="155.4">
+      <tspan x="299.298" y="155.4">User visits Client App</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="152.674" y="206" width="293.25" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="152.674" y="206" width="293.25" height="54"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="299.299" y="228.9">
+      <tspan x="299.299" y="228.9">User does some action that would need to</tspan>
+      <tspan x="299.299" y="244.9">make an API call to the Resource Server</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="299,303.594 447.955,340.833 299,378.072 150.045,340.833 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="299,303.594 447.955,340.833 299,378.072 150.045,340.833 "/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="299" y="344.733">
+      <tspan x="299" y="344.733">Access Token Available?</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="150.045,340.832 85,340.832 85,585 119.38,585 "/>
+    <polygon style="fill: #000000" points="126.88,585 116.88,590 119.38,585 116.88,580 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="126.88,585 116.88,590 119.38,585 116.88,580 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="447.956,340.832 519,340.832 519,435 477.264,435 "/>
+    <polygon style="fill: #000000" points="469.764,435 479.764,430 477.264,435 479.764,440 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="469.764,435 479.764,430 477.264,435 479.764,440 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="109" y="331">
+    <tspan x="109" y="331">Yes</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="464.5" y="329.75">
+    <tspan x="464.5" y="329.75">No</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="130.1" y="566" width="267.8" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="130.1" y="566" width="267.8" height="38"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="264" y="588.9">
+      <tspan x="264" y="588.9">Make API Call using Bearer Auth Token</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e6e6fa" x="153.475" y="416" width="313.05" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153.475" y="416" width="313.05" height="38"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="310" y="438.9">
+      <tspan x="310" y="438.9">Generate Auth Token via Auth Code Workflow</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="299.222" y1="260.906" x2="299.133" y2="292.924"/>
+    <polygon style="fill: #000000" points="299.112,300.424 294.14,290.41 299.133,292.924 304.14,290.437 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="299.112,300.424 294.14,290.41 299.133,292.924 304.14,290.437 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="299.298" y1="171.497" x2="299.299" y2="196.522"/>
+    <polygon style="fill: #000000" points="299.299,204.022 294.299,194.022 299.299,196.522 304.299,194.022 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="299.299,204.022 294.299,194.022 299.299,196.522 304.299,194.022 "/>
+  </g>
+  <g>
+    <rect style="fill: #e6e6fa" x="706" y="137.417" width="193.55" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="706" y="137.417" width="193.55" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="802.775" y="164.167">
+      <tspan x="802.775" y="164.167">Auth Code Workflow</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="310,455.01 310,510 264,510 264,555.254 "/>
+    <polygon style="fill: #000000" points="264,562.754 259,552.754 264,555.254 269,552.754 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="264,562.754 259,552.754 264,555.254 269,552.754 "/>
+  </g>
+  <text font-size="16.9333" style="fill: #0000ff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="802.776" y="159">
+    <tspan x="802.776" y="159"></tspan>
+  </text>
+  <g>
+    <rect style="fill: #e6e6fa" x="706" y="188.417" width="222.55" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="706" y="188.417" width="222.55" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="817.275" y="215.167">
+      <tspan x="817.275" y="215.167">Refresh Token Workflow</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="260.393,676.982 387.299,708.708 260.393,740.435 133.488,708.708 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="260.393,676.982 387.299,708.708 260.393,740.435 133.488,708.708 "/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="260.393" y="712.608">
+      <tspan x="260.393" y="712.608">API Call success?</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="263.417" y1="605.001" x2="261.623" y2="666.539"/>
+    <polygon style="fill: #000000" points="261.404,674.036 256.698,663.895 261.623,666.539 266.693,664.186 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="261.404,674.036 256.698,663.895 261.623,666.539 266.693,664.186 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="415.5" y="683.4">
+    <tspan x="415.5" y="683.4">No</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="234.5" y="766.15">
+    <tspan x="234.5" y="766.15">Yes</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="568.432,675.82 675.365,707.697 568.432,739.573 461.5,707.697 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="568.432,675.82 675.365,707.697 568.432,739.573 461.5,707.697 "/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.432" y="711.597">
+      <tspan x="568.432" y="711.597">Invalid Token?</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="568.433,781.766 688.639,811.817 568.433,841.869 448.228,811.817 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="568.433,781.766 688.639,811.817 568.433,841.869 448.228,811.817 "/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.433" y="815.717">
+      <tspan x="568.433" y="815.717">Expired Token?</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="579.5" y="648.15">
+    <tspan x="579.5" y="648.15">Yes</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="530.5" y="763.15">
+    <tspan x="530.5" y="763.15">No</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="568.433" y1="740.573" x2="568.433" y2="771.03"/>
+    <polygon style="fill: #000000" points="568.433,778.53 563.433,768.53 568.433,771.03 573.433,768.53 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="568.433,778.53 563.433,768.53 568.433,771.03 573.433,768.53 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="568.433" y1="842.869" x2="568.433" y2="886.013"/>
+    <polygon style="fill: #000000" points="568.433,893.513 563.433,883.513 568.433,886.013 573.433,883.513 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="568.433,893.513 563.433,883.513 568.433,886.013 573.433,883.513 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="705.5" y="803.15">
+    <tspan x="705.5" y="803.15">Yes</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="534.5" y="869.15">
+    <tspan x="534.5" y="869.15">No</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="471.458" y="896.75" width="193.95" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="471.458" y="896.75" width="193.95" height="38"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.433" y="919.65">
+      <tspan x="568.433" y="919.65">Some other error occurred</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e6e6fa" x="741.5" y="792.816" width="173.65" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="741.5" y="792.816" width="173.65" height="38"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="828.325" y="815.716">
+      <tspan x="828.325" y="815.716">Refresh Token Workflow</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="689.639" y1="811.817" x2="730.766" y2="811.817"/>
+    <polygon style="fill: #000000" points="738.266,811.816 728.266,816.817 730.766,811.817 728.266,806.817 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="738.266,811.816 728.266,816.817 730.766,811.817 728.266,806.817 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="388.299" y1="708.288" x2="450.764" y2="708.083"/>
+    <polygon style="fill: #000000" points="458.264,708.059 448.28,713.091 450.764,708.083 448.248,703.091 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="458.264,708.059 448.28,713.091 450.764,708.083 448.248,703.091 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="260.266" y1="741.399" x2="260.116" y2="779.771"/>
+    <polygon style="fill: #000000" points="260.087,787.27 255.126,777.251 260.116,779.771 265.126,777.29 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="260.087,787.27 255.126,777.251 260.116,779.771 265.126,777.29 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="142" y="790.5" width="236" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="142" y="790.5" width="236" height="38"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="260" y="813.4">
+      <tspan x="260" y="813.4">Show Results</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 191.333 896.5 L 326.667,896.5 C 345.352,896.5 360.5,905.23 360.5,916 C 360.5,926.77 345.352,935.5 326.667,935.5 L 191.333,935.5 C 172.648,935.5 157.5,926.77 157.5,916 C 157.5,905.23 172.648,896.5 191.333,896.5z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 191.333 896.5 L 326.667,896.5 C 345.352,896.5 360.5,905.23 360.5,916 C 360.5,926.77 345.352,935.5 326.667,935.5 L 191.333,935.5 C 172.648,935.5 157.5,926.77 157.5,916 C 157.5,905.23 172.648,896.5 191.333,896.5"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="259" y="920">
+      <tspan x="259" y="920">End</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 231.632 58 L 366.966,58 C 385.651,58 400.799,66.7304 400.799,77.5 C 400.799,88.2696 385.651,97 366.966,97 L 231.632,97 C 212.947,97 197.799,88.2696 197.799,77.5 C 197.799,66.7304 212.947,58 231.632,58z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 231.632 58 L 366.966,58 C 385.651,58 400.799,66.7304 400.799,77.5 C 400.799,88.2696 385.651,97 366.966,97 L 231.632,97 C 212.947,97 197.799,88.2696 197.799,77.5 C 197.799,66.7304 212.947,58 231.632,58"/>
+    <text font-size="12.8" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="299.299" y="81.5">
+      <tspan x="299.299" y="81.5">Begin</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="299.299" y1="97.9963" x2="299.298" y2="121.782"/>
+    <polygon style="fill: #000000" points="299.298,129.282 294.298,119.282 299.298,121.782 304.298,119.283 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="299.298,129.282 294.298,119.282 299.298,121.782 304.298,119.283 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="568.432,674.82 568.432,487.75 617,487.75 617,390.25 310,390.25 310,405.292 "/>
+    <polygon style="fill: #000000" points="310,412.792 305,402.792 310,405.292 315,402.792 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="310,412.792 305,402.792 310,405.292 315,402.792 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="828.325,791.831 828.325,584.75 474,584.75 474,537.75 264,537.75 264,555.273 "/>
+    <polygon style="fill: #000000" points="264,562.773 259,552.773 264,555.273 269,552.773 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="264,562.773 259,552.773 264,555.273 269,552.773 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="259.812" y1="829.501" x2="259.284" y2="885.763"/>
+    <polygon style="fill: #000000" points="259.213,893.262 254.308,883.216 259.284,885.763 264.307,883.31 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="259.213,893.262 254.308,883.216 259.284,885.763 264.307,883.31 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="470.489" y1="915.829" x2="370.825" y2="915.91"/>
+    <polygon style="fill: #000000" points="363.325,915.916 373.321,910.908 370.825,915.91 373.329,920.908 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="363.325,915.916 373.321,910.908 370.825,915.91 373.329,920.908 "/>
+  </g>
+  <text font-size="22.5778" style="fill: #ff0000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="350" y="12.75">
+    <tspan x="350" y="12.75">OAuth2 API Call from Client App</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="518.5" y="463.25">
+    <tspan x="518.5" y="463.25"></tspan>
+  </text>
+  <text font-size="16.9333" style="fill: #0000ff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="705" y="260.75">
+    <tspan x="705" y="260.75">Workflows not described</tspan>
+    <tspan x="705" y="281.917">in this diagram</tspan>
+  </text>
+</svg>

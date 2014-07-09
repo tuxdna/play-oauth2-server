@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET      /                       controllers.Application.index
+GET      /apis                   controllers.Application.apis
+GET      /docs                   controllers.Application.docs
+
+# Sample API
+GET      /sampleapi/status/:id   controllers.SampleAPI.status(id: String)
+
+
+# Apps
+GET      /apps/authorize/        controllers.Apps.authorize
+POST     /apps/send_auth/        controllers.Apps.send_auth
+
+# Clients
+GET      /clients/               controllers.Clients.list
+GET      /client/new             controllers.Clients.create
+POST     /client/add             controllers.Clients.add
+POST     /client/update          controllers.Clients.update
+GET      /client/edit/:id        controllers.Clients.edit(id: String)
+PUT      /client/                controllers.Clients.update
+GET      /client/:id             controllers.Clients.get(id: String)
+DELETE   /client/:id             controllers.Clients.delete(id: String)
+
+
+# Authentication
+GET      /login                  controllers.Auth.login
+POST     /authenticate           controllers.Auth.authenticate
+GET      /logout                 controllers.Auth.logout
+
+# OAuth2 Routes
+POST     /oauth2/access_token    controllers.OAuth2Controller.accessToken
+
+# Map static resources from the /public folder to the /assets URL path
+GET      /webjars/*file          controllers.WebJarAssets.at(file)
+GET      /assets/*file           controllers.Assets.at(path="/public", file)

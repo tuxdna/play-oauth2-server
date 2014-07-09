@@ -1,0 +1,25 @@
+@(clientForm: Form[ClientDetails], user: models.oauth2.User)(implicit flash: Flash)
+
+@main("Welcome to Apps", user) {
+
+ @flash.get("error").map { errorMessage =>
+   <div class="alert-message error"><p><strong>Oops!</strong> @errorMessage</p></div>
+ }
+
+ @clientForm.globalError.map { error =>
+     <p class="error">@error.message</p>
+ }
+ 
+ @helper.form(action = routes.Clients.add()) {
+  @helper.inputText(clientForm("id"), 'size -> 40, 'disabled -> "disabled")
+  @helper.inputText(clientForm("secret"), 'size -> 40, 'disabled -> "disabled")
+  <input type="hidden" value="@(clientForm("id").value)" name="id"/>
+  <input type="hidden" value="@(clientForm("secret").value)" name="secret"/>
+  @helper.inputText(clientForm("description"), 'size -> 100)
+  @helper.inputText(clientForm("redirectUri"), 'size -> 100)
+  @helper.inputText(clientForm("scope"), 'size -> 40)
+
+  <input type="hidden" value="@clientForm("username")" name="username"/>
+  <input type="submit" value="Save"/><a href="@routes.Clients.list">Cancel</a>
+ }
+}

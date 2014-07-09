@@ -1,0 +1,55 @@
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	font-weight:400;
+	color:#666;
+	background:#ffffff;
+	}
+label {
+	font-weight: 500;
+	}	
+.loginbox{
+	position:absolute;
+	width:420px;
+	height:auto;
+	top:50%;
+	left:50%;
+	margin:-250px 0 0 -210px;
+	-webkit-box-shadow: 0 1px 2px 2px rgba(160,160,160,0.25);
+			box-shadow: 0 1px 2px 2px rgba(160,160,160,0.25);
+	padding:10px;
+	background:#fff;
+	}
+.loginbox h1{
+	font-weight:100;
+	color:#000;
+	text-align:center;
+	margin:0;
+	padding-top:65px;
+	background:url(../images/favicon.png) no-repeat center top;
+	font-size:20px;
+	text-indent:-999px;
+	overflow:hidden;
+	}
+	
+.btn-primary {
+	color: #fff;
+	background-color: rgb(57,181,74);
+	border-color:rgb(42,167,59); 
+	border-bottom-width:3px;
+	text-transform:uppercase;
+}
+.title{
+	font-size: 16px;
+	color: #8F2317;
+	font-weight: 500;
+	text-align: center;
+}
+.signup{
+	font-size:15px;
+	margin:20px 0 10px;
+	}
+.signup a{
+	font-weight:500;
+	}

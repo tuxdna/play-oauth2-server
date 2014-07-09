@@ -1,0 +1,31 @@
+@* authorize Template File *@
+@(user: models.oauth2.User, appAuthForm: Form[AppAuthInfo])
+
+@main("Authorize App", user) { 
+
+
+<p>Following app has requested access to your data.</p>
+	
+ @helper.form(action = routes.Apps.send_auth) {
+
+  <ul>
+   <li>ClientId: <strong>@(appAuthForm("client_id").value)</strong></li>
+   <li>Redirect URI: <strong>@(appAuthForm("redirect_uri").value)</strong></li>
+   <li>Scope: <strong>@(appAuthForm("scope").value)</strong></li>
+  </ul>
+
+  <input type="hidden" value="@(appAuthForm("client_id").value)" name="client_id"/>
+  <input type="hidden" value="@(appAuthForm("redirect_uri").value)" name="redirect_uri"/>
+  <input type="hidden" value="@(appAuthForm("scope").value)" name="scope"/>
+  <input type="hidden" value="@(appAuthForm("state").value)" name="state"/>
+  
+  @helper.inputRadioGroup(appAuthForm("accepted"), 
+  	options=Seq("Y" -> "Yes", "N" -> "No"),
+  	'_label -> "Do you want to Authorize this App?",
+  	'_error -> appAuthForm("accepted").error.map(
+  		_.withMessage("Select an option")))
+
+  <input type="submit" value="Proceed"/>
+ }
+
+}

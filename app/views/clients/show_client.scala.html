@@ -1,0 +1,15 @@
+@(client: models.oauth2.Client, user: models.oauth2.User)
+
+@main("Welcome to Apps", user) {
+ show client
+ 
+ <h3>Client: @client.id</h3>
+<ul>
+	<li>ClientId: @client.id</li>
+	<li>Description: @client.description</li>
+	<li>Redirect URI: @client.redirectUri</li>
+	<li>Scope: @client.scope</li>
+	<li><a href="@routes.Clients.edit(client.id)">Edit</a></li>
+	<li><a href="@routes.Clients.delete(client.id)">Delete</a></li>
+</ul>
+}

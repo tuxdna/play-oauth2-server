@@ -1,0 +1,25 @@
+@(message: String, user: models.oauth2.User)
+
+@main("Welcome to Apps", user) {
+	<div class="container">
+	
+Welcome to Apps. Here you can find details for
+<ul> 
+    <li><a href="@routes.Application.apis">API listing</a></li>
+    <li><a href="@routes.Clients.list">Manage Apps</a> and</li>
+    <li><a href="@routes.Application.docs">API Documentation</a></li>
+</ul>
+    
+<h2>API</h2>    
+    
+<h3>Sample API endpoints</h3>
+    <div style='font-family: "Courier New", Courier, monospace;'>
+    StatusAPI: @{val c = routes.SampleAPI.status("ID"); (c.method + " " + c.url) }
+    <br/>
+    Sample: StatusAPI <a href="@routes.SampleAPI.status("123").url">123</a>
+    </div>
+
+<h2>Registered Apps</h2>    
+
+</div>
+}

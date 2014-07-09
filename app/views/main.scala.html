@@ -1,0 +1,45 @@
+@(title: String, user: models.oauth2.User)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@title</title>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap.min.css"))">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+	<link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("css/custom.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/main.css")">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<div class="container">
+  <div class="page-header">
+  <h1><a href="@routes.Application.index" id="logo">Apps</a></h1>
+</div>
+<div class="navbar navbar-inverse" role="navigation">
+      <p class="navbar-text"><a href="@routes.Application.index" id="logo">Apps</a></p>
+      <p class="navbar-text">Signed in as @user.username <span>(@user.email)</span></p>
+      <p class="navbar-text"><a href="@routes.Auth.logout()">Logout</a></p>
+    </div>
+    @content
+</div>  
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="@routes.WebJarAssets.at(WebJarAssets.locate("js/bootstrap.min.js"))"></script>
+  </body>
+</html>

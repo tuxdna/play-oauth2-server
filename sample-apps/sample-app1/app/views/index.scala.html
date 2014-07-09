@@ -1,0 +1,30 @@
+@(message: String)
+
+@main(message) {
+<div class="container">
+  <p>
+    This is a sample to show how we can access API using OAuth2.0 protocol.
+  </p>
+  <p>
+  
+  <label for="elementId">Id: <input type="text" name="elementId" id="elementId" /></label>
+  <button onclick="showSampleApiStatus()">Query Status</button>
+  </p>
+  <p>
+    (<a href="@routes.Application.redirect">Connect to Resource Server</a>)
+  </p>
+
+  <script lang="javascript">
+	function showSampleApiStatus() {
+		var elementId = $("#elementId").val();
+		if(elementId) {
+		  var url = "/querystatus/"+elementId;
+		  window.location.href = url;
+		} else {
+			alert("No Element ID provided");
+	    }
+	}
+   </script>
+</div>
+
+}

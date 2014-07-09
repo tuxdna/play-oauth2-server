@@ -1,0 +1,14 @@
+@(message: String, user: models.oauth2.User)
+
+@main("Welcome to Application Listing", user) {
+
+<h2>API Listing</h2>    
+    
+<h3>Sample API endpoints</h3>
+<div style='font-family: "Courier New", Courier, monospace;'>
+    SampleAPI Status: @{val c = routes.SampleAPI.status("ID"); (c.method + " " + c.url) }
+    <br/>
+    Sample: Status for give ID <a href="@routes.SampleAPI.status("123").url">123</a>
+</div>
+
+}

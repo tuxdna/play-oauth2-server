@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="37cm" height="28cm" viewBox="129 166 737 551" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="130.775" y="167.1" width="734.002" height="549"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="130.775" y="167.1" width="734.002" height="549"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="497.776" y="445.5">
+      <tspan x="497.776" y="445.5"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="372.7" y="282.867" width="251" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="372.7" y="282.867" width="251" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="498.2" y="309.617">
+      <tspan x="498.2" y="309.617">User Logs into Apps Server</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="180.525" y="358.8" width="635.35" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180.525" y="358.8" width="635.35" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="498.2" y="385.55">
+      <tspan x="498.2" y="385.55">User registers a Client App with REDIRECT_URI, SCOPE and other details</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="192.325" y="434.733" width="611.75" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="192.325" y="434.733" width="611.75" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="498.2" y="461.483">
+      <tspan x="498.2" y="461.483">User now has CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, and SCOPE</tspan>
+    </text>
+  </g>
+  <text font-size="22.5778" style="fill: #ff0000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="272" y="686">
+    <tspan x="272" y="686">Client App registration on the Apps Server</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="147.4" y="510.667" width="701.6" height="43.1667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="147.4" y="510.667" width="701.6" height="43.1667"/>
+    <text font-size="16.9333" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="498.2" y="537.417">
+      <tspan x="498.2" y="537.417">CLIENT_ID, CLIENT_SECRET are provided to the Client App manually by the User</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="498.2" y1="327.039" x2="498.2" y2="348.058"/>
+    <polygon style="fill: #000000" points="498.2,355.558 493.2,345.558 498.2,348.058 503.2,345.558 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="498.2,355.558 493.2,345.558 498.2,348.058 503.2,345.558 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="498.2" y1="402.972" x2="498.2" y2="423.992"/>
+    <polygon style="fill: #000000" points="498.2,431.492 493.2,421.492 498.2,423.992 503.2,421.492 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="498.2,431.492 493.2,421.492 498.2,423.992 503.2,421.492 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="498.2" y1="478.906" x2="498.2" y2="499.925"/>
+    <polygon style="fill: #000000" points="498.2,507.425 493.2,497.425 498.2,499.925 503.2,497.425 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="498.2,507.425 493.2,497.425 498.2,499.925 503.2,497.425 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 435.533 212.1 L 560.867,212.1 C 578.172,212.1 592.2,220.607 592.2,231.1 C 592.2,241.593 578.172,250.1 560.867,250.1 L 435.533,250.1 C 418.228,250.1 404.2,241.593 404.2,231.1 C 404.2,220.607 418.228,212.1 435.533,212.1z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 435.533 212.1 L 560.867,212.1 C 578.172,212.1 592.2,220.607 592.2,231.1 C 592.2,241.593 578.172,250.1 560.867,250.1 L 435.533,250.1 C 418.228,250.1 404.2,241.593 404.2,231.1 C 404.2,220.607 418.228,212.1 435.533,212.1"/>
+    <text font-size="16.9331" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="498.2" y="236.392">
+      <tspan x="498.2" y="236.392">Begin</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 435.533 586.6 L 560.867,586.6 C 578.172,586.6 592.2,595.107 592.2,605.6 C 592.2,616.093 578.172,624.6 560.867,624.6 L 435.533,624.6 C 418.228,624.6 404.2,616.093 404.2,605.6 C 404.2,595.107 418.228,586.6 435.533,586.6z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 435.533 586.6 L 560.867,586.6 C 578.172,586.6 592.2,595.107 592.2,605.6 C 592.2,616.093 578.172,624.6 560.867,624.6 L 435.533,624.6 C 418.228,624.6 404.2,616.093 404.2,605.6 C 404.2,595.107 418.228,586.6 435.533,586.6"/>
+    <text font-size="16.9331" style="fill: #0000ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="498.2" y="610.892">
+      <tspan x="498.2" y="610.892">End</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="498.2" y1="251.094" x2="498.2" y2="272.132"/>
+    <polygon style="fill: #000000" points="498.2,279.632 493.2,269.632 498.2,272.132 503.2,269.632 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="498.2,279.632 493.2,269.632 498.2,272.132 503.2,269.632 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="498.2" y1="554.832" x2="498.2" y2="575.87"/>
+    <polygon style="fill: #000000" points="498.2,583.37 493.2,573.37 498.2,575.87 503.2,573.37 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="498.2,583.37 493.2,573.37 498.2,575.87 503.2,573.37 "/>
+  </g>
+</svg>
