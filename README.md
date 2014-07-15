@@ -20,6 +20,10 @@ Create a distribution
 
     $ sbt dist
 
+## Database Setup
+
+Please read `docs/README.devel` for instructions.
+
 
 ## Test Coverage
 
