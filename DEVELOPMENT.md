@@ -1,0 +1,164 @@
+# Usual OAuth2.0 Workflow:
+
+Usual OAuth2.0 Workflow steps:
+
+ * 1: Let the user know what you're doing and request authorization
+ * 2: Exchange authorization code for an access token
+ * 3: Call the API
+ * 4a: Refresh the access token
+ * 4b: Obtaining a new access token
+
+
+# First time setup
+
+Start the server:
+
+    $ sbt "run 9002"
+
+This will start the server at port 9002. Now goto http://localhost:9002/
+
+For the first time, you would see a message: `Database 'default' needs evolution!`. Now click "Apply this script now!"
+
+
+# Use fixtures.sql to fill up some sample data.
+
+In a separate terminal, go to Sqlite3 console and run queries from `fixtures.sql`.
+
+    $  sqlite3 db/oauth2server_dev_db.sqlite
+    sqlite> .read docs/fixtures.sql
+
+Now you should be able to access the server using user `user1` and password `password`.
+
+# Ensure that the server is running on port 9002
+
+$ play
+[play-oauth2-server] $ run 9002
+
+# OAuth2.0 Workflows using wget
+
+## Generate an access token using password grant_type
+
+    $ wget -q -O - --post-data "grant_type=password&client_id=client1&client_secret=secret1&username=user1&password=password" http://localhost:9002/oauth2/access_token | python -mjson.tool
+    {
+        "access_token": "MzE3YWI5MTUtZWEwNy00OTU1LTgyMTQtZmE2ZjBlMzQwYzYx",
+        "expires_in": 3600,
+        "refresh_token": "NmRmYjg1NzItMzc0YS00YTgzLTk0OWItMmFjNjQxM2U1NjFk",
+        "scope": "",
+        "token_type": "Bearer"
+    }
+
+
+
+## Use protected resource using the token:
+
+
+    $ wget -q -d --header="Authorization: Bearer MzE3YWI5MTUtZWEwNy00OTU1LTgyMTQtZmE2ZjBlMzQwYzYx" "http://localhost:9002/sampleapi/status/123" -O -
+    
+    ---request begin---
+    GET /sampleapi/status/123 HTTP/1.1
+    User-Agent: Wget/1.15 (linux-gnu)
+    Accept: */*
+    Host: localhost:9002
+    Connection: Keep-Alive
+    Authorization: Bearer MzE3YWI5MTUtZWEwNy00OTU1LTgyMTQtZmE2ZjBlMzQwYzYx
+    
+    ---request end---
+    
+    ---response begin---
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 43
+    
+    ---response end---
+    
+    {"id":"123","total":"100","completed":"30"}
+
+
+
+
+## Use a Refresh Token to get a new token
+
+    $ wget -d -q -O - --post-data \
+      "grant_type=refresh_token&client_id=client1&client_secret=secret1&refresh_token=NmRmYjg1NzItMzc0YS00YTgzLTk0OWItMmFjNjQxM2U1NjFk" http://localhost:9002/oauth2/access_token
+    
+    ---request begin---
+    POST /oauth2/access_token HTTP/1.1
+    User-Agent: Wget/1.15 (linux-gnu)
+    Accept: */*
+    Host: localhost:9002
+    Connection: Keep-Alive
+    Content-Type: application/x-www-form-urlencoded
+    Content-Length: 127
+    
+    ---request end---
+    [BODY data: grant_type=refresh_token&client_id=client1&client_secret=secret1&refresh_token=NmRmYjg1NzItMzc0YS00YTgzLTk0OWItMmFjNjQxM2U1NjFk]
+    
+    ---response begin---
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 185
+    
+    ---response end---
+    
+    {
+      "access_token":"MTkyNGY2MzYtMWM3OS00YjhkLTg2OTktMDQzOGQyMjU2NmM5",
+      "expires_in":3600,
+      "scope":"",
+      "refresh_token":"YjQ1NTZmOWUtYmYwNS00ZmNkLWIwN2MtMTEwMjcwNTdlYjgw",
+      "token_type":"Bearer"
+    }
+
+
+## When the access token expires we get an error in the header.
+
+    $ wget -q -d --header="Authorization: Bearer MTkyNGY2MzYtMWM3OS00YjhkLTg2OTktMDQzOGQyMjU2NmM5" "http://localhost:9002/sampleapi/status/123" -O -
+    
+    ---request begin---
+    GET /sampleapi/status/123 HTTP/1.1
+    User-Agent: Wget/1.15 (linux-gnu)
+    Accept: */*
+    Host: localhost:9002
+    Connection: Keep-Alive
+    Authorization: Bearer MTkyNGY2MzYtMWM3OS00YjhkLTg2OTktMDQzOGQyMjU2NmM5
+    
+    ---request end---
+
+    ---response begin---
+    HTTP/1.1 401 Unauthorized
+    WWW-Authenticate: Bearer error="invalid_token", error_description="The access token expired"
+    Content-Length: 0
+    
+    ---response end---
+
+
+## Generate a token via authorization code workflow
+
+
+    $ wget -d -q -O - --post-data "grant_type=authorization_code&client_id=client1&client_secret=secret1&code=authcode1&redirect_uri=http://localhost:9001/" http://localhost:9002/oauth2/access_token | python -mjson.tool
+    
+    ---request begin---
+    POST /oauth2/access_token HTTP/1.1
+    User-Agent: Wget/1.15 (linux-gnu)
+    Accept: */*
+    Host: localhost:9002
+    Connection: Keep-Alive
+    Content-Type: application/x-www-form-urlencoded
+    Content-Length: 120
+    
+    ---request end---
+    
+    ---response begin---
+    HTTP/1.1 200 OK
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 185
+    
+    ---response end---
+    
+    {
+        "access_token": "ZjlmZTE5OGEtNDM5Yi00ODczLWIxYzEtOTk5M2RhNmU5MTIy",
+        "expires_in": 3600,
+        "refresh_token": "OTY0MzU5NmMtNTlkOC00ZmVhLTg4OTctZjYyYzk0MDU2ZGMz",
+        "scope": "",
+        "token_type": "Bearer"
+    }
+

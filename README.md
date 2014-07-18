@@ -22,7 +22,7 @@ Create a distribution
 
 ## Database Setup
 
-Please read `docs/README.devel` for instructions.
+Please read `DEVELOPMENT.md` for instructions [DEVELOPMENT.md](DEVELOPMENT.md).
 
 
 ## Test Coverage
