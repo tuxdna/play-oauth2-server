@@ -20,7 +20,7 @@ Create a distribution
 
     $ sbt dist
 
-## Database Setup
+## First time Server and Database Setup
 
 Please read `DEVELOPMENT.md` for instructions [DEVELOPMENT.md](DEVELOPMENT.md).
 
