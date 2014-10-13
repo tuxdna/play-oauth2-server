@@ -61,26 +61,4 @@ trait Secured {
     Action(request => f(user)(request))
   }
 
-  //  /**
-  //   * Check if the connected user is a member of this project.
-  //   */
-  //  def IsMemberOf(project: Long)(f: => String => Request[AnyContent] => Result) = IsAuthenticated { user => request =>
-  //    if(Project.isMember(project, user)) {
-  //      f(user)(request)
-  //    } else {
-  //      Results.Forbidden
-  //    }
-  //  }
-  //
-  //  /**
-  //   * Check if the connected user is a owner of this task.
-  //   */
-  //  def IsOwnerOf(task: Long)(f: => String => Request[AnyContent] => Result) = IsAuthenticated { user => request =>
-  //    if(Task.isOwner(task, user)) {
-  //      f(user)(request)
-  //    } else {
-  //      Results.Forbidden
-  //    }
-  //  }
-
 }

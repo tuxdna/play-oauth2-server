@@ -9,6 +9,8 @@ GET      /docs                   controllers.Application.docs
 
 # Sample API
 GET      /sampleapi/status/:id   controllers.SampleAPI.status(id: String)
+GET      /city/:id               controllers.CityAPI.findById(id: Long)
+GET      /city1/:id              controllers.CityAPI.findById1(id: Long)
 
 
 # Apps
