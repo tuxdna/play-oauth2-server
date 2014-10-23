@@ -11,6 +11,14 @@ Usual OAuth2.0 Workflow steps:
 
 # First time setup
 
+Create the database:
+
+    $ mkdir db
+    $ cd db
+    $ sqlite3 oauth2server_dev_db.sqlite
+
+
+
 Start the server:
 
     $ sbt "run 9002"
